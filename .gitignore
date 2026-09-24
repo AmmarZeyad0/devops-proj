@@ -1,0 +1,23 @@
+# Env / secrets
+.env
+*.pem
+kubeconfig*
+
+# Terraform (weeks 3–4)
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+
+# Python / Node (depending on what your app is written in)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
