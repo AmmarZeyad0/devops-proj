@@ -10,12 +10,12 @@ kubeconfig*
 *.tfvars
 !*.tfvars.example
 
-# Python / Node (depending on what your app is written in)
+# Python
 __pycache__/
 *.py[cod]
+*.egg-info/
 .venv/
 venv/
-node_modules/
 
 # OS/editor
 .DS_Store

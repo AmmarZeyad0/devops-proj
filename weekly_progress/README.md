@@ -5,4 +5,4 @@ that week's checklist — check items off as you go and jot down notes/blockers 
 
 | Week | Focus |
 |------|-------|
-| [week-01](week-01/README.md) | Docker to Kind — deploy your own Docker app on a local Kind cluster using manifests you write yourself |
+| [week-01](week-01/README.md) | Docker to Kind — write a Dockerfile per service, then deploy the whole stack (apps + Postgres/Redis/RabbitMQ) on a local Kind cluster using manifests you write yourself |
