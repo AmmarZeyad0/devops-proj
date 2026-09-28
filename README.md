@@ -207,6 +207,22 @@ watch a booking expire, and watch messages flow in the RabbitMQ UI at `http://lo
 See [`weekly_progress/`](weekly_progress/) for the week-by-week checklists — start with
 [`weekly_progress/week-01/README.md`](weekly_progress/week-01/README.md).
 
+## Working with the AI mentor (Claude Code)
+
+The repo ships a Claude Code mentor agent that coaches you through the plan without doing the
+graded work for you. Open Claude Code in the repo root and use:
+
+| Command | What it does |
+|---------|--------------|
+| `/next-step` | Works out where you are in the current week's checklist and gives you the next small task, with a "done when…" check |
+| `/review-my-work [path]` | Reviews your Dockerfiles/manifests/write-ups the way the PR reviewer will — findings and hints, not rewritten files |
+| `/quiz [file or topic]` | One-question-at-a-time "explain this line" drill on your own files, to prepare for review |
+
+Or just ask for the `devops-mentor` agent ("use devops-mentor to help me debug this
+CrashLoopBackOff"). It climbs a hint ladder — concept → pointers → skeleton → worked example — and
+only shows full answers when you explicitly ask. Definitions live in `.claude/agents/` and
+`.claude/skills/`; repo rules for Claude are in `CLAUDE.md`.
+
 ## Repo layout
 
 ```
